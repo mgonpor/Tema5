@@ -11,7 +11,7 @@ public class Diapositiva23 {
 	}
 
 	static int maximo(int t[]) {
-		int result = 0;
+		int result = Integer.MIN_VALUE;
 		for(int valor : t) {
 			if(valor > result) {
 				result = valor;
