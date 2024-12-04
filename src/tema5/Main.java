@@ -8,7 +8,9 @@ public class Main {
 		
 //		int array[] = {1, 2, 3, 4, 5, 6, 7};
 
-		System.out.println(Arrays.toString(FuncionesArrays.funcion12())); 
+//		System.out.println(Arrays.toString(FuncionesArrays.funcion12())); 
+		
+		ActLibroSecreto.ejer07();
 	}
 
 }
