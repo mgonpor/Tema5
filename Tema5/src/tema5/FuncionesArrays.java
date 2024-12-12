@@ -6,6 +6,38 @@ import java.util.Scanner;
 
 public class FuncionesArrays {
 
+	static void funcion16() {
+		Scanner sc = new Scanner(System.in);
+		int array[] = new int[10];
+		for(int i=0; i<10; i++) {
+			System.out.printf("\nPos%d: ", i);
+		}
+		int min = minimoArrayInt(array);
+		int max = maximoArrayInt(array);
+		System.out.print("[");
+		for(int i=0; i<array.length;i++) {
+			if(i==array.length-1 && array[i]==min) {
+				System.out.print(array[i]+" mínimo");
+			}
+			else if(i==array.length-1 && array[i]==max) {
+				System.out.print(array[i]+" máximo");
+			}
+			else if(i==array.length-1) {
+				System.out.println(array[i]);
+			}
+			else if(array[i]==min) {
+				System.out.println(array[i]+" mínimo ");
+			}
+			else if(array[i]==max) {
+				System.out.println(array[i]+" máximo ");
+			}
+			else {
+				System.out.print(array[i] + " ");
+			}
+		}
+		System.out.println("]");
+	}
+	
 	static int[] generaArrayInt(int n, int min, int max) {
 		Random rand = new Random();
 		int arrayInt[] = new int[n];

@@ -94,12 +94,12 @@ public class ActLibroSecreto {
 		muestraArrayConIndicies(array);
 		//Cambia
 		int arrayNuevo[] = Arrays.copyOf(array, array.length);
-		int ij=0;
+		int i=0;
 		int j=array.length-1;
 		for(int elem : arrayNuevo) {
 			if(esPrimo(elem)) {
-				array[ij] = elem;
-				ij++;
+				array[i] = elem;
+				i++;
 			}else {
 				array[j] = elem;
 				j--;
